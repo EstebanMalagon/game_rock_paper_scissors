@@ -1,14 +1,18 @@
-# Rock Paper Scissors Game - Build Instructions
-This project contains a simple Rock, Paper, and Scissors game implemented in Python. 
+Rock Paper Scissors Game - Build Instructions
 
-## Build Automation Script
-The `build.py` script helps automate the build process by doing the following:
-1. Cleaning all `__pycache__` folders to keep the workspace clean.
-2. Running unit tests to verify that the application works correctly.
-3. Creating a deployable ZIP package containing all Python source files (excluding tests and cache).
+This project contains a simple Rock Paper Scissors game written in Python.
 
-## How to Run the Build Script
-Make sure you have Python installed. Then run the following command in your project root directory:
+Build Automation Script:
 
-```bash
+- The script 'build.py' automates the build process by:
+  1. Cleaning all __pycache__ directories to keep the workspace clean.
+  2. Running unit tests to ensure the code works correctly.
+  3. Creating a deployable zip package with all source Python files, excluding tests and cache.
+
+To run the build script:
+
+Make sure Python is installed on your system. Open your terminal or command prompt and run:
+
 python build.py
+
+If all unit tests pass, the script will generate a zip package named 'rps_game_package.zip' which you can use to deploy the application.

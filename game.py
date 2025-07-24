@@ -1,5 +1,15 @@
 import random
 
+def determine_winner(user_option, computer_option):
+    if user_option == computer_option:
+        return "tie"
+    elif (user_option == 'rock' and computer_option == 'scissors') or \
+         (user_option == 'paper' and computer_option == 'rock') or \
+         (user_option == 'scissors' and computer_option == 'paper'):
+        return "win"
+    else:
+        return "lose"
+
 def play_game():
     while True:
         print("Welcome to Rock Paper Scissors! Merged conflict!")
@@ -21,12 +31,12 @@ def play_game():
         computer_option = random.choice(options)
         print(f"The computer option is: {computer_option}")         
 
-        if user_option == computer_option:
+        result = determine_winner(user_option, computer_option)
+
+        if result == "tie":
             print("It's a tie!")
-        
-        elif (user_option == 'rock' and computer_option == 'scissors') or (user_option == 'paper' and computer_option == 'rock') or (user_option == 'scissors' and computer_option == 'paper'):
+        elif result == "win":
             print("You win!")
-        
         else:
             print("Oh no! You lost!")
         
