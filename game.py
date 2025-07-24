@@ -28,7 +28,7 @@ def play_game():
             print("You win!")
         
         else:
-            print("You lost! Try again!")
+            print("Oh no! You lost!")
         
         print()
 
