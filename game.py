@@ -2,7 +2,7 @@ import random
 
 def play_game():
     while True:
-        print("Welcome to Rock Paper Scissors! From conflict-practice-1")
+        print("Welcome to Rock Paper Scissors! Merged conflict!")
         print("Rules: Rock beats Scissors, Scissors beats Paper, Paper beats Rock.")
         print("Enter your choice: 'rock', 'paper', or 'scissors'. Type 'exit' to quit the game.")
         
