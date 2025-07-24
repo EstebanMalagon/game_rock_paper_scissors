@@ -11,7 +11,7 @@ def play_game():
         user_option = input("Your option is: ").lower()
 
         if user_option == 'exit':
-            print("Thanks for playing! Bye!")
+            print("Thanks for playing! Goodbye!")
             break         
 
         if user_option not in options:
