@@ -20,12 +20,12 @@ class TestRockPaperScissors(unittest.TestCase):
         self.assertEqual(determine_winner('paper', 'scissors'), "lose")
         self.assertEqual(determine_winner('scissors', 'rock'), "lose")
 
-    # Tests que fallarán a propósito
+    # Tests failing to demonstrate error handling
     def test_fail_1(self):
-        self.assertEqual(determine_winner('rock', 'scissors'), "lose")  # Falla
+        self.assertEqual(determine_winner('rock', 'scissors'), "lose")
 
     def test_fail_2(self):
-        self.assertEqual(determine_winner('paper', 'scissors'), "win")  # Falla
+        self.assertEqual(determine_winner('paper', 'scissors'), "win")
 
 if __name__ == "__main__":
     unittest.main()
